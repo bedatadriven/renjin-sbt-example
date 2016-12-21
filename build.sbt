@@ -3,7 +3,7 @@
 // IMPORTANT: Build URL must use *https* and _not_ *http*
 // sbt fails to handle the redirects correctly.
 resolvers +=
-    "BeDataDriven" at "http://nexus.bedatadriven.com/content/groups/public"
+    "BeDataDriven" at "https://nexus.bedatadriven.com/content/groups/public"
 
 lazy val root = (project in file(".")).
   settings(
