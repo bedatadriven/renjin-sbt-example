@@ -19,5 +19,13 @@ class SetSuite extends FunSuite with Matchers {
     val result = engine.eval("1+1")
     assert(engine.eval("1+1") == DoubleVector.valueOf(2))
   }
+ 
+  test("xz library is loaded") {
+    val factory = new RenjinScriptEngineFactory
+    val engine = factory.getScriptEngine();
+    val result = engine.eval("readRDS('res:xztest.RData')")
+
+    assert(result == DoubleVector.valueOf(42))
+  } 
 
 }
