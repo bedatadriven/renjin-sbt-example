@@ -7,7 +7,7 @@ resolvers +=
 
 // Workaround for buggy http handler in SBT 1.x  
 // https://github.com/sbt/sbt/issues/3570
-updateOptions := updateOptions.value.withGigahorse(false)
+//updateOptions := updateOptions.value.withGigahorse(false)
 
 lazy val root = (project in file(".")).
   settings(
