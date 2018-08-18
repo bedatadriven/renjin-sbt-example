@@ -14,7 +14,7 @@ lazy val root = (project in file(".")).
     name := "renjin-test",
     version := "1.0",
     scalaVersion := "2.11.1",
-    libraryDependencies += "org.renjin" % "renjin-script-engine" % "0.9.2657",
+    libraryDependencies += "org.renjin" % "renjin-script-engine" % "0.9.2660",
     libraryDependencies += "org.scalatest" % "scalatest_2.11" % "3.0.1" % "test"  
        
   )
